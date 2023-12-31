@@ -1,25 +1,46 @@
-
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./component/Navbar";
-import Home from "./component/Home";
-import About from "./component/About";
 import DaftarCatatan from "./component/DaftarCatatan";
-import UserList from "./component/UserList";
-import PostList from "./component/PostForm";
+import Hooks from "./component/ExampleComponent";
+import BookList from "./component/bookList";
+import Home from "./page/Home";
+import Login from "./page/login";
+import Rating from "./page/Rating";
+import DetailPage from './page/DetailPage';
+import TambahBuku from "./page/TambahBuku";
+import PeminjamForm from "./component/PeminjamanForm";
+import Board from "./component/board";
+import { UserProvider } from "./component/UserContext";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      <UserProvider>
+        <AppWithNavbar />
+      </UserProvider>
+    </BrowserRouter>
+  );
+};
+
+const AppWithNavbar = () => {
+  const location = useLocation();
+  const hideNavbarOnLogin = location.pathname === "/login";
+
+  return (
+    <>
+      {!hideNavbarOnLogin && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/detail/:id_buku" element={<DetailPage />} />
+        <Route path="/TambahBuku" element={<TambahBuku />} />
+        <Route path="/Rating" element={<Rating />} />
         <Route path="/daftar-catatan" element={<DaftarCatatan />} />
-        <Route path="Users" element={<UserList />} />
-        <Route path="post" element={<PostList />} />
+        <Route path="/hooks" element={<Hooks />} />
+        <Route path="/peminjaman" element={<Board />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 };
 

@@ -13,4 +13,4 @@ const Catatan = ({ id, title, body, createdAt, hapusCatatan }) => {
   );
 };
 
-export default Catatan;
+export default Catatan; 
