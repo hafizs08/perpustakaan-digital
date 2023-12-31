@@ -55,4 +55,10 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed for the frontend,
 
 ## Example
 
-![Sample Image](url-to-sample-image)
+![image](https://github.com/hafizs08/perpustakaan-digital/assets/94980822/6cafee24-59cd-421b-99ad-df8c1f553129)
+![image](https://github.com/hafizs08/perpustakaan-digital/assets/94980822/d5aa5115-6626-41b2-af56-45934c9fcdf2)
+![image](https://github.com/hafizs08/perpustakaan-digital/assets/94980822/65cbae9a-0586-42f5-bc23-7b038db26b03)
+![image](https://github.com/hafizs08/perpustakaan-digital/assets/94980822/71177a97-03dd-47da-a068-51d02409c2ae)
+
+
+
