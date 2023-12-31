@@ -1,39 +1,58 @@
+# Simple Digital Library
 
-Perpustakaan Digital Sederhana
-Proyek ini adalah perpustakaan digital sederhana yang memungkinkan pengguna untuk menelusuri, meminjam, dan memberikan rating buku. Aplikasi ini bertujuan untuk memberikan pengalaman pengguna yang intuitif dalam mengakses koleksi buku, melihat informasi detail, dan berpartisipasi dalam proses penilaian.
+This project is a simple digital library that allows users to browse, borrow, and rate books. The application aims to provide an intuitive user experience for accessing book collections, viewing detailed information, and participating in the rating process.
 
-Fitur Utama
-Informasi Detail Buku: Setiap buku memiliki halaman detail yang mencakup informasi seperti judul, penulis, tahun terbit, dan jumlah salinan.
+## Key Features
 
-Peminjaman Buku: Pengguna dapat meminjam buku dengan menentukan tanggal peminjaman dan tanggal pengembalian.
+1. **Book Details:** Each book has a detailed page that includes information such as title, author, publication year, and the number of copies.
 
-Rating dan Komentar: Pengguna dapat memberikan rating dan komentar terhadap buku yang telah mereka baca.
+2. **Book Borrowing:** Users can borrow books by specifying the borrowing and return dates.
 
-Cara Menggunakan
-Pastikan Anda telah menginstal [Node.js] (https://nodejs.org/en/) dan untuk backend nya Java Development Kit (JDK), Apache Maven, Database MySQL di perangkat Anda.
-Clone repositori ke perangkat lokal Anda.
+3. **Rating and Comments:** Users can rate and comment on books they have read.
 
-Langkah-langkah Instalasi
-Back-End (Spring Boot):
+## Getting Started
 
-Clone repositori proyek.
+Make sure you have [Node.js](https://nodejs.org/en/) installed for the frontend, and for the backend, you need Java Development Kit (JDK), Apache Maven, and a MySQL database on your device.
 
-git clone https://github.com/hafizs08/webWisata.git
-cd perpustakaan-digital/demo
+### Installation Steps
 
-Konfigurasi basis data MySQL di file application.properties.
+**Back-End (Spring Boot):**
 
-Jalankan aplikasi Spring Boot.
+1. Clone the project repository.
 
-mvn spring-boot:run
+    ```bash
+    git clone https://github.com/hafizs08/webWisata.git
+    cd perpustakaan-digital/demo
+    ```
 
-Front-End (React.js):
+2. Configure the MySQL database in the `application.properties` file.
 
-Pindah ke direktori front-end.
-cd perpustakaan-digital/my-notes-app
+3. Run the Spring Boot application.
 
-Install dependensi.
-npm install
+    ```bash
+    mvn spring-boot:run
+    ```
 
-Jalankan aplikasi React.js
-npm run dev
+**Front-End (React.js):**
+
+1. Navigate to the front-end directory.
+
+    ```bash
+    cd perpustakaan-digital/my-notes-app
+    ```
+
+2. Install dependencies.
+
+    ```bash
+    npm install
+    ```
+
+3. Run the React.js application.
+
+    ```bash
+    npm run dev
+    ```
+
+## Example
+
+![Sample Image](url-to-sample-image)
